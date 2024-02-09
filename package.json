@@ -1,0 +1,39 @@
+{
+  "name": "cube-tool-gui-utils",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "rm -rf lib && webpack --progress --config webpack.prod.js",
+    "dev": "webpack-dev-server --config webpack.dev.js",
+    "release": "npm run test && npm run build && npm publish"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bundleDependencies": false,
+  "resolutions": {
+    "babel-core": "7.0.0-bridge.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/plugin-proposal-class-properties": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^7.1.5",
+    "chai": "^4.2.0",
+    "chroma-js": "^2.1.0",
+    "eslint": "^5.16.0",
+    "webpack": "^4.12.0",
+    "webpack-cli": "^3.0.3",
+    "webpack-dev-server": "^3.1.8"
+  },
+  "files": [
+    "lib",
+    "README.md"
+  ]
+}
